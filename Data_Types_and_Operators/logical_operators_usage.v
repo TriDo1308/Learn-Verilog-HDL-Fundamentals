@@ -29,7 +29,7 @@ module logical_operators_usage();
       
         #1;
         while (my_val2 < 3) begin
-			$display("WHILE_LOOOP my_val2 = %d", my_val2);
+			$display("WHILE_LOOP my_val2 = %d", my_val2);
 			my_val2 = my_val2 + 1;  				// increment my_val2
         end
         
@@ -37,3 +37,12 @@ module logical_operators_usage();
         // Ex: my_val2 = 4'b0111
 	end
 endmodule
+
+/* OUTPUT
+:( I expected my_val1 = 0 but my_val1 = 111
+GREAT! my_val2 = 0000
+GREAT! my_val1 = 111 my_val2 = 0000
+WHILE_LOOP my_val2 = 0
+WHILE_LOOP my_val2 = 1
+WHILE_LOOP my_val2 = 2
+*/
