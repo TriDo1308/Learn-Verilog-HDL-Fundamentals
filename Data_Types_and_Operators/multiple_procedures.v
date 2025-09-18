@@ -1,5 +1,4 @@
 module multiple_procedure();
-	
 	reg x = 1'b0; 			// 1bit variable with the value 0
 	reg y = 1'b1; 			// 1bit variable with the value 1	
 	reg z;        			// used to store the result of operations between x and y
@@ -13,12 +12,17 @@ module multiple_procedure();
 	initial begin
         #2;         		// wait 2 time units
         z = x ^ y;  		// bit-wise XOR between the 1 bit variables x and y    
-	    #10;        		// wait 10 time units
+	#10;        		// wait 10 time units
         y = 0;      		// change the value of y
         z = x | y;  		// bit-wise OR between the 1 bit variables x and y   
         #10;        		// wait 10 time units
         z = z & 1;  		// bit-wise AND between the 1 bit variable z and 1
         #10;        		// wait 10 time units
 	end
-
 endmodule
+
+/* OUTPUT
+x = 0, y = 1, z = 1
+x = 0, y = 0, z = 0
+x = 0, y = 0, z = 0
+*/

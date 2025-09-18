@@ -18,3 +18,8 @@ module sum_product();
 		$display("\n\t x = %0.2f, y = %0.2f, prod_real = %0.2f", x, y, prod_real);
 	end
 endmodule
+
+/* OUTPUT
+a = 3, b = 9, sum_int = 12
+x = 99.67, y = -33.41, prod_real = -3329.97
+*/

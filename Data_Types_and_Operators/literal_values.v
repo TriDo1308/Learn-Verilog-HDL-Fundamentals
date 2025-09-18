@@ -27,3 +27,12 @@ module literal_values();
 
 endmodule
 
+/* OUTPUT
+my_var = 137
+my_var = 89
+my_var = 10001001
+my_var = 211
+my_var = zzzz0001
+my_var = 00000001
+my_var = 11110000
+*/
